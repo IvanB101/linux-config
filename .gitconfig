@@ -1,0 +1,14 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Ivan Brocas
+	email = 104206321+IvanB101@users.noreply.github.com
+[alias]
+    conf = config --global --edit
+    graph = log --all --decorate --oneline --graph

@@ -4,6 +4,7 @@ configs=(
     nvim ~/.config/nvim
     tmux ~/.config/tmux/tmux.conf
     shell ~/.config/shell
+    libreoffice ~/.config/libreoffice/4/user
 )
 
 conf() {

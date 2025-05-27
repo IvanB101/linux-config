@@ -1,0 +1,18 @@
+
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|}
+\multicolumn{5}{c|}{Title} \\ \hline
+C1 & C2 & \multicolumn{2}{c|}{C3} & RET1 \\ \hline
+Categoria & Subcategoria & \multicolumn{2}{c|}{edad} & value \\ \hline
+ &  & int min & int max & Double value \\ \hline
+Categoria & Sub Categoria & Desde & Hasta & Fee Value \\ \hline
+ & CONYUGE &  &  & =CalcularCuota(conyuge) * 0.7 \\ \hline
+\multirow{-2}{*}{FAMILIAR} & DESCENDIENTE\_PRIMER\_GRADO &  &  & 0 \\ \hline
+ &  &  & 30 & =cmmu * 0.45 \\ \hline
+ &  & 31 & 45 & =cmmu * 0.82 \\ \hline
+ &  & 46 & 55 & =cmmu \\ \hline
+ &  & 56 & 65 & =cmmu * 1.2 \\ \hline
+\multirow{-5}{*}{VOLUNTARIO\_ADHERENTE} & \multirow{-5}{*}{BECARIO} & 66 &  & =cmmu * 2 \\ \hline
+ &  &  &  & =error(``categoria desconocida'') \\ \hline
+\end{tabular}
+\end{table}

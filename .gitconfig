@@ -1,0 +1,38 @@
+[user]
+    name = IvanB101
+	email = 104206321+IvanB101@users.noreply.github.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gitlab.com"]
+	helper = 
+	helper = !/usr/bin/glab auth git-credential
+[alias]
+    conf = config --global --edit
+    graph = log --all --decorate --oneline --graph
+    full-init = "!f() {\
+        git init &&\
+        git add . &&\
+        git commit -m \"first commit\" &&\
+        git branch -M main; }; f"
+
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true # use n and N to move between diff sections
+    dark = true
+    side-by-side = true
+[merge]
+    conflictstyle = zdiff3
+[pager]
+    blame = delta
+    diff = delta
+    reflog = delta
+    show = delta
+[pull]
+	rebase = true
